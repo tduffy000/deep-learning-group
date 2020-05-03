@@ -1,11 +1,11 @@
 # deep-learning-group
 Repo for Deep Learning @ CCNY Group Project (Spring 2020)
 
-<h3>Yoga Pose classification</h3>
+<h2>Yoga Pose classification</h2>
 
 <h4>Motivation</h4>
 
-Being in quarantine and working from home, our belly fat is stacking up, and our back is hurting. Since we have no prior experience with yoga poses, and can’t have an instructor to correct our poses while at home. Hence, for the final project, we are working on training a model that can classify different yoga poses and correct them via a smartphone or laptop’s camera. We hope that it can help people to do yoga poses correctly at home and be healthy.
+Being in quarantine and working from home, our belly fat is stacking up, and our back is hurting. Since we have no prior experience with yoga poses, and can’t have an instructor to correct our poses while at home. Hence, for the final project, we are working on training a model that can classify different yoga poses and correct them via a smartphone  or laptop’s camera. We hope that it can help people to do yoga poses correctly at home and be healthy.
 
 <h4>Method</h4>
 
