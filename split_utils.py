@@ -12,9 +12,9 @@ def _copy_symlinks(files, src_dir, dst_dir):
         dst_file_path = os.path.abspath(dst_file_path)
         os.symlink(src_file_path, dst_file_path)
 
-def train_valid_split(original_dir, validation_split=0.1, seed=None):
-    if seed is not None:
-        random.seed(seed)    
+def train_valid_split(original_dir, validation_split=0.1, seed=42):
+    #if seed is not None:
+        #random.seed(seed)    
     if not os.path.isdir(original_dir):
         raise NotADirectoryError
     tmp_dir = tempfile.TemporaryDirectory()
