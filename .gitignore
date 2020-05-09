@@ -130,7 +130,5 @@ dmypy.json
 .pyre/
 
 # Keras model file
-*.h5
 *.npy
-*.hdf5
 *.csv
