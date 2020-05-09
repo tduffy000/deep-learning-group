@@ -1,11 +1,13 @@
 
 <h3> Test 5 </h3>
 
-Model name: CNN with more complex architecture
+Model name: CNN with more complex architecture 2
 
 Model architecture:
 
 ![archi](/Documentations/Sam%20Journal/Images/Test_5_Archi.png)
+
+In this model, batch normalization layers were added after every convolutional layer to prevent the layers from overfitting. The patience period was also increased.
 
 Model result:
 
