@@ -17,7 +17,7 @@ Indeed that was the reason. The model is now much less suspect to overfitting. T
 
 ![metrics](/Documentations/Sam%20Journal/Images/Test_7_Metrics.png)
 
-Similarly, the precision and recall values of model on test set were much closer to the validation accuracy. It indicated that overfitting issue had been mitigated. Hooray!
+Similarly, the precision and recall values of model on test set were much closer to the validation accuracy. It was on par with the previous model, while was much less overfitted. It indicated that overfitting issue had been mitigated. Hooray!
 However, again, it still couldn't solve the issues in class 7 and 8
 
 ![confusion](/Documentations/Sam%20Journal/Images/Test_7_Confusion_Matrix.png)
