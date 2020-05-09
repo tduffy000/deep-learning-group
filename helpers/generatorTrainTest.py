@@ -1,6 +1,6 @@
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-def generatorTrainTest(data_DIR='/content/drive/My Drive/Colab Notebooks/dataset',
+def generatorTrainTest(data_DIR,
                         miniBatchSize=200,
                         colorMode='rgb',
                         classMode='categorical',
