@@ -1,49 +1,21 @@
+Test 1 
+Model name: Simple CNN
+Model architecture:
+![archi](/Documentations/Sam%20Journal/Test_1_Archi.png)
 
+Model result
+![graph](/Documentations/Sam%20Journal/Test_1_Graph.png)
+Because this model is super simple, it gets quickly overfitted after only 2 epochs. However, one of the reasons might be because the batch_size of was 32 and steps_per_epoch was 200 which trained the model on the repetitive data many times and caused it to overfitted.
 
-Skip to content
-Using Gmail with screen readers
+![metrics](/Documentations/Sam%20Journal/Test_1_Metrics.png)
+When the model tried to predict the unseen data, surprisingly, the precisions across classes were much higher than the validation_accuracy. It might be a good thing because the validation data was augmented during the training process to make it much more varied and hence, more difficult for the model to predict during the training process.
+![confusion](/Documentations/Sam%20Journal/Test_1_Confusion_Matrix.png)
+The confusion matrix here visualized the result. This basic model has no trouble in predicting the labels for most of the classes. However, the model had slight troubles in its precision for class 8. One of the explaination might be because of the uneven distribution of the test set. The usual higher precision of the test set compared to the validation accuracy might be due to its size.
 
-Conversations
-8.15 GB (54%) of 15 GB used
-Manage
-Terms · Privacy · Program Policies
-Last account activity: 34 minutes ago
-Details
-
-<h3>Yoga Pose classification</h3>
-
-[Github link dataset]
-(https://github.com/DhruvJawalkar/yoga-poses-dataset)
-
-<h4>Motivation</h4>
-
-Being in quarantine and working from home, my belly fat is stacking up, and my back is hurting. I have no prior experience with yoga poses, and I can’t have an instructor to correct my poses while I am at home. Hence, for the final project, I am working on training a model that can classify different yoga poses and correct them via a smartphone or laptop’s camera. I hope that it can help me (and other people) to do yoga poses correctly at home and be healthy.
-
-<h4>Method</h4>
-
-To tackle this problem, I will first train a simple CNN classifier to establish a baseline performance for the final model. Next, other pose identifying models will be concatenated to segment and classify those poses. To do this, specifically, I will need to first experiment with pose classifying algorithms/models and see how well they are performing on the yoga poses dataset. Based on the results, the outputs of the pose classifier model on the yoga dataset will be used to train a different neural network classifier to classify those yoga poses. The latter one can either be a simple DNN or a CNN with DNN layer as output layers. In summary, the plan is dataset -> yoga poses image classifier -> model and then dataset -> pose classifier -> segmented yoga poses -> yoga poses classifier -> model. The idea is to see how well and how fast an image-based classifier alone can classify yoga poses compared to a pose-based classifier. Based on the results, additional datasets from videos of new yoga poses can then be added and retrain the last couple of layers of the classifier using transfer learning.
-
-<h4>Evaluate</h4>
-
-To evaluate the model, a simple train test split from the dataset will be used first to evaluate the result. Then, some non-yoga pose images can be used to evaluate how well the model is differentiating between yoga and non-yoga poses. Finally, if the model performed well on the previous two tests, the final model can then be implemented and evaluate by a human using a laptop webcam or smartphone’s camera to first differentiate yoga and non-yoga poses, then between different types of yoga poses.
-
-<h4>Others</h4>
-Regarding the pose classifier, there are many choices to choose from. One of them is OpenPose. Based on the project’s Github page, the model can perform a really good job in detecting the human body, hand, and legs key-points. With many different types of output and its Python API, the output result of the dataset can be used to classify the poses.
-
-The dataset is from the Oregon State University. It contains approximately 107 different yoga poses, 5994 total images, and about 60 images per class. Combining with data augmentation, this dataset should be sufficient to train the model.
-
-<h4>Similar Projects and Conclusion</h4>
-  Even though there are already plenty of similar projects on the internet, the idea of using transfer learning to add new poses to the model is still new. Hence, this project can be built upon the previous work to improve its capabilities. 
-
-[Stanford Project]
-(http://cs230.stanford.edu/projects_winter_2019/reports/15813480.pdf)
-
-[Smart Mirror Yoga AI]
-(https://www.hackster.io/yogai/yogai-smart-personal-trainer-f53744)
-
-[Sample Project]
-(https://github.com/DhruvJawalkar/yoga-pose-estimation)
-
-These are some prior works that this project can be based on and improve it.
-Project Proposal.txt
-Displaying Project Proposal.txt.
+Next step
+To address the issue in this step, we will try these changes in the subsequent iterations:
+- Lower the steps_per_epoch value to solve the overfitting issue
+- Lower the batch_size as well
+- Test other methods: such as using regularlizer to lower the learning rate as the training goes on or change the optimizer.
+- It might be a good idea to generate addition images to ensure that the number of images per class are the same.
+- Changing the architecture will follow after fixing the overfitting issue
