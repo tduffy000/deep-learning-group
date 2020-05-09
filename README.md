@@ -18,21 +18,15 @@ To evaluate the model, a simple train test split from the dataset will be used f
 <h4>Others</h4>
 Regarding the pose classifier, there are many choices to choose from. One of them is OpenPose. Based on other project’s, the model can perform a really good job in detecting the human body, hand, and legs key-points. With many different types of output and its Python API, the output result of the dataset can be used to classify the poses.
 
-The dataset is from the Oregon State University. It contains approximately 107 different yoga poses, 5994 total images, and about 60 images per class. Combining with data augmentation, this dataset should be sufficient to train the model.
+The dataset is from the Oregon State University. It contains approximately 107 different yoga poses, 5994 total images, and about 60 images per class. Combining with data augmentation, this dataset should be sufficient to train the model. You can download it from this [link](https://oregonstate.app.box.com/s/4c5o6gilogogdm9m23tgtop7vw23e9vj).
 
 <h4>Similar Projects and Conclusion</h4>
-  Even though there are already plenty of similar projects on the internet, the idea of using transfer learning to add new poses to the model is still new. Hence, this project can be built upon the previous work to improve its capabilities. 
-  
+  Even though there are already plenty of similar projects on the internet, the idea of using transfer learning to add new poses to the model is still new. Hence, this project can be built upon the previous work to improve its capabilities.
+
 These are some prior works that this project can be based on and improve it.
 
-[Stanford Project]
-(http://cs230.stanford.edu/projects_winter_2019/reports/15813480.pdf)
+[Stanford Project](http://cs230.stanford.edu/projects_winter_2019/reports/15813480.pdf)
 
-[Smart Mirror Yoga AI]
-(https://www.hackster.io/yogai/yogai-smart-personal-trainer-f53744)
+[Smart Mirror Yoga AI](https://www.hackster.io/yogai/yogai-smart-personal-trainer-f53744)
 
-[Sample Project]
-(https://github.com/DhruvJawalkar/yoga-pose-estimation)
-
-
-
+[Sample Project](https://github.com/DhruvJawalkar/yoga-pose-estimation)
