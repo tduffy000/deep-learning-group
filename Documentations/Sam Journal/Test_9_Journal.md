@@ -1,7 +1,7 @@
 
-<h3> Test 8 </h3>
+<h3> Test 9 </h3>
 
-Model name: Transfer learning baseline - VGG16
+Model name: Transfer learning baseline - VGG16 with strict policies to reduce overfitting
 
 Model architecture:
 
