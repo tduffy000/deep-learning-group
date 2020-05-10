@@ -26,4 +26,4 @@ The confusion matrix further solidated the above statement. The size of the inpu
 Next steps:
 - Realizing the issue, we have 2 choices for our final models: increase the input image size or have more trainable layer.
 - Because of the time constraint and consistency with other model, we will have more trainable layers instead of increasing the input image size.
-- Because the model did a good in preventing overfitting, we can try to increase learning rate in hope that the model will have higher accuracy.
+- Because the model did a good in preventing overfitting, we can try to decrease the learning decaying rate to every 20 epochs. 
