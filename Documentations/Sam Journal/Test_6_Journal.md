@@ -25,4 +25,4 @@ By observing the metrics, we can see that even though the recall and precision v
 There is nothing particularly interested about this model's confusion matrix. There are still noises and error.
 
 Next steps:
-- Lower the training batch size. I just realized that our training batch size was 200. Crazy! That might be the reason for the differences between validation and train accuracy.
+- Lower the training batch size. I just realized that our training batch size was 200. Crazy! That might be the reason for the differences between validation and train accuracy. It might also be the reason for notoriously slow training time.
