@@ -24,5 +24,5 @@ Because of the merging of the 2 bad classes in the dataset, the precision and re
 The class label issue was fixed. However, because the data was merged together, the merged class now had the more images than other classes. It may potential skew the result.
 
 Next steps:
-- With this model, it can be shown that the upper limit for this classification task is about 86%, which is acceptable! Next, we will test training the model again using the ResNet50 because Tony had troubles with that in the past. 
+- With this model, it can be shown that the upper limit for this classification task is about 86%, which is acceptable! Next, we will test training the model again using the ResNet50 because Tony had troubles with that in the past.
 - Address the size of the model.

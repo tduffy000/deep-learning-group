@@ -1,27 +1,14 @@
-
-
-Skip to content
-Using Gmail with screen readers
-
-Conversations
-8.15 GB (54%) of 15 GB used
-Manage
-Terms · Privacy · Program Policies
-Last account activity: 34 minutes ago
-Details
-
 <h3>Yoga Pose classification</h3>
 
-[Github link dataset]
-(https://github.com/DhruvJawalkar/yoga-poses-dataset)
+We used the dataset found at this [Github link](https://github.com/DhruvJawalkar/yoga-poses-dataset).
 
 <h4>Motivation</h4>
 
-Being in quarantine and working from home, my belly fat is stacking up, and my back is hurting. I have no prior experience with yoga poses, and I can’t have an instructor to correct my poses while I am at home. Hence, for the final project, I am working on training a model that can classify different yoga poses and correct them via a smartphone or laptop’s camera. I hope that it can help me (and other people) to do yoga poses correctly at home and be healthy.
+Being in quarantine and working from home, my belly fat is stacking up, and my back is hurting. I have no prior experience with yoga poses, and I can’t have an instructor to correct my poses while I am at home. Hence, for the final project, We are working on training a model that can classify different yoga poses and correct them via a smartphone or laptop’s camera. I hope that it can help me (and other people) to do yoga poses correctly at home and be healthy.
 
 <h4>Method</h4>
 
-To tackle this problem, I will first train a simple CNN classifier to establish a baseline performance for the final model. Next, other pose identifying models will be concatenated to segment and classify those poses. To do this, specifically, I will need to first experiment with pose classifying algorithms/models and see how well they are performing on the yoga poses dataset. Based on the results, the outputs of the pose classifier model on the yoga dataset will be used to train a different neural network classifier to classify those yoga poses. The latter one can either be a simple DNN or a CNN with DNN layer as output layers. In summary, the plan is dataset -> yoga poses image classifier -> model and then dataset -> pose classifier -> segmented yoga poses -> yoga poses classifier -> model. The idea is to see how well and how fast an image-based classifier alone can classify yoga poses compared to a pose-based classifier. Based on the results, additional datasets from videos of new yoga poses can then be added and retrain the last couple of layers of the classifier using transfer learning.
+To tackle this problem, We will first train a simple CNN classifier to establish a baseline performance for the final model. Next, other pose identifying models will be concatenated to segment and classify those poses. To do this, specifically, we will need to first experiment with pose classifying algorithms/models and see how well they are performing on the yoga poses dataset. Based on the results, the outputs of the pose classifier model on the yoga dataset will be used to train a different neural network classifier to classify those yoga poses. The latter one can either be a simple DNN or a CNN with DNN layer as output layers. In summary, the plan is dataset -> yoga poses image classifier -> model and then dataset -> pose classifier -> segmented yoga poses -> yoga poses classifier -> model. The idea is to see how well and how fast an image-based classifier alone can classify yoga poses compared to a pose-based classifier. Based on the results, additional datasets from videos of new yoga poses can then be added and retrain the last couple of layers of the classifier using transfer learning.
 
 <h4>Evaluate</h4>
 
@@ -33,17 +20,10 @@ Regarding the pose classifier, there are many choices to choose from. One of the
 The dataset is from the Oregon State University. It contains approximately 107 different yoga poses, 5994 total images, and about 60 images per class. Combining with data augmentation, this dataset should be sufficient to train the model.
 
 <h4>Similar Projects and Conclusion</h4>
-  Even though there are already plenty of similar projects on the internet, the idea of using transfer learning to add new poses to the model is still new. Hence, this project can be built upon the previous work to improve its capabilities. 
+  Even though there are already plenty of similar projects on the internet, the idea of using transfer learning to add new poses to the model is still new. Hence, this project can be built upon the previous work to improve its capabilities.
 
-[Stanford Project]
-(http://cs230.stanford.edu/projects_winter_2019/reports/15813480.pdf)
-
-[Smart Mirror Yoga AI]
-(https://www.hackster.io/yogai/yogai-smart-personal-trainer-f53744)
-
-[Sample Project]
-(https://github.com/DhruvJawalkar/yoga-pose-estimation)
+* [Stanford Project](http://cs230.stanford.edu/projects_winter_2019/reports/15813480.pdf)
+* [Smart Mirror Yoga AI](https://www.hackster.io/yogai/yogai-smart-personal-trainer-f53744)
+* [Sample Project](https://github.com/DhruvJawalkar/yoga-pose-estimation)
 
 These are some prior works that this project can be based on and improve it.
-Project Proposal.txt
-Displaying Project Proposal.txt.
